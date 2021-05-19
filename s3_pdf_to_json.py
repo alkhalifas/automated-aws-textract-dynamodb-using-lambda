@@ -24,11 +24,9 @@ class DocumentProcessor:
     processType = ''
 
     def main(self, bucketName, documentName):
-        self.roleArn = "arn:aws:iam::859209049214:role/service-role/automated-s3-json-role"
-
+        self.roleArn = <<"ADD YOUR ROLE ARN HERE">>
         self.bucket = bucketName
         self.document = documentName
-
         self.CreateTopicandQueue()
         self.ProcessDocument(ProcessType.DETECTION)
         self.DeleteTopicandQueue()
@@ -110,7 +108,7 @@ class DocumentProcessor:
         outputFileName = pdfTextExtractionS3ObjectName + '.json'
         
         #Changing the output bucket
-        newOutputBucket = "dipt-cognitive-analytics-output"
+        newOutputBucket = <<"ADD YOUR OUTPUT BUCKET HERE">>
         
         # s3.put_object(Body=outputInJsonText,
         #               Bucket=pdfTextExtractionS3Bucket, Key=outputFileName)
