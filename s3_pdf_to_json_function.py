@@ -24,7 +24,7 @@ class DocumentProcessor:
     processType = ''
 
     def main(self, bucketName, documentName):
-        self.roleArn = <<"ADD YOUR ROLE ARN HERE">>
+        self.roleArn = "ADD YOUR ROLE ARN HERE"
         self.bucket = bucketName
         self.document = documentName
         self.CreateTopicandQueue()
@@ -108,7 +108,7 @@ class DocumentProcessor:
         outputFileName = pdfTextExtractionS3ObjectName + '.json'
         
         #Changing the output bucket
-        newOutputBucket = <<"ADD YOUR OUTPUT BUCKET HERE">>
+        newOutputBucket = "ADD YOUR OUTPUT BUCKET HERE"
         
         # s3.put_object(Body=outputInJsonText,
         #               Bucket=pdfTextExtractionS3Bucket, Key=outputFileName)
