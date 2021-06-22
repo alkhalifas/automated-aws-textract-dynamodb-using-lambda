@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="boto3-layer">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/boto3-layer.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
